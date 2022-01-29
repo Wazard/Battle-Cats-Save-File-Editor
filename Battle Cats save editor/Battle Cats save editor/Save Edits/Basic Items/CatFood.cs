@@ -20,9 +20,9 @@ namespace Battle_Cats_save_editor.SaveEdits
             int CatFood = GetCatFood(path);
             Console.WriteLine($"You have {CatFood} cat food");
 
-            Console.WriteLine("How much cat food do you want?(max 45000, but I recommend below 20k, to be safer)");
+            Console.WriteLine("How much cat food do you want?(max 900000, but I recommend below 20k, to be safer)");
 
-            CatFood = Editor.MaxMinCheck((int)Editor.Inputed(), 45000);
+            CatFood = Editor.MaxMinCheck((int)Editor.Inputed(), 900000);
             SetCatFood(path, CatFood);
             Console.WriteLine("Set Cat food to " + CatFood);
         }
